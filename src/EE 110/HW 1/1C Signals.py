@@ -1,11 +1,17 @@
+import matplotlib.pyplot as plt
 import numpy as np 
-np.set_printoptions(precision=3)
-import scipy as sp
-from scipy import integrate
 
-arr = np.arange(0,5,.5)
-print(arr)
+x = np.linspace(0, 2, 100)
 
-fun = lambda t: 2
+plt.plot(x, x, label='linear')
+plt.plot(x, x**2, label='quadratic')
+plt.plot(x, x**3, label='cubic')
 
-print(integrate.quad(fun,-4,4))
+plt.xlabel('x label')
+plt.ylabel('y label')
+
+plt.title("Simple Plot")
+
+plt.legend()
+
+plt.show()
