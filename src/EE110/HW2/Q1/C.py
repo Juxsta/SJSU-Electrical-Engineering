@@ -14,7 +14,7 @@ import sympy
 #%%
 plt.rcParams["figure.figsize"] = (20,3)
 #%%
-csv = pd.read_csv("src/EE110/HW2/RC_ramp_step_pulse.txt",sep='\t');
+csv = pd.read_csv("src/EE110/HW2/Q1/RC_ramp_step_pulse.txt",sep='\t');
 #%% [markdown]
 # ## Plot for measured responses
 #%%
